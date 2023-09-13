@@ -872,11 +872,11 @@ contract VaultOwned is Ownable {
 
 }
 
-contract SBERC20Token is ERC20Permit, VaultOwned {
+contract Snowbase is ERC20Permit, VaultOwned {
 
     using SafeMath for uint256;
 
-    constructor() ERC20("Snowbank", "SB", 9) {
+    constructor() ERC20("Snowbase", "SB", 9) {
     }
 
     function mint(address account_, uint256 amount_) external onlyVault() {

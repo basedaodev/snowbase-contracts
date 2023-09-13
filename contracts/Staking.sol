@@ -571,7 +571,7 @@ interface IDistributor {
     function distribute() external returns ( bool );
 }
 
-contract SnowbankStaking is Ownable {
+contract SnowbaseStaking is Ownable {
 
     using SafeMath for uint256;
     using SafeMath for uint32;

@@ -231,7 +231,7 @@ interface IBondCalculator {
   function valuation( address pair_, uint amount_ ) external view returns ( uint _value );
 }
 
-contract SnowbankTreasury is Ownable {
+contract SnowbaseTreasury is Ownable {
 
     using SafeMath for uint;
     using SafeMath for uint32;

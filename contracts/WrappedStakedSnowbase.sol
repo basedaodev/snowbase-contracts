@@ -745,14 +745,14 @@ interface IsSB {
     function index() external view returns ( uint );
 }
 
-contract wsSB is ERC20 {
+contract WrappedStakedSnowbase is ERC20 {
     using SafeERC20 for ERC20;
     using Address for address;
     using SafeMath for uint;
 
     address public immutable sSB;
 
-    constructor( address _sSB ) ERC20( 'Wrapped sSB', 'wsSB' ) {
+    constructor( address _sSB ) ERC20( 'Wrapped Staked Snowbase', 'wsSB' ) {
         require( _sSB != address(0) );
         sSB = _sSB;
     }
